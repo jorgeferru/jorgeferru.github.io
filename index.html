@@ -36,6 +36,17 @@
         apicartConfigure({
             token: "LNdOhPMnXA6Lu_sCS8MbRM?erPNibvvHPT?NG7HQ!YRC3YK!HCga49FZu2KNbl3j",
         });
+		
+		init: function () {
+            Utils.loops.forEach(document.querySelectorAll('.buy-button'), function (key, button) {
+                apicart.cartQuantityManipulator.render({
+                    el: button,
+                    itemUrl: button.getAttribute('data-url'),
+                    submitButton: 'Add To Cart'
+                });
+            });
+        }
+		
     </script>
 	
 	<script src="https://cdn.apicart.dev/v1/?components=all"></script>
