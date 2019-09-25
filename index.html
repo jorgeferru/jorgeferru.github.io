@@ -42,8 +42,20 @@
                     itemUrl: button.getAttribute('data-url'),
                     submitButton: 'Add To Cart'
                 });
+             });
+			 apicart.cartDropdown.render({
+                el: '.cart-dropdown',
+                leftPosition: true,
+                infoBlock: '%name%',
+                removalButton: '<button data-apicart-cart-remove-item="%dataUrl%">Remove</button>',
+                toggleButton: 'Cart %itemsCount% items for $%itemsPrice%',
+                footerBlocks: [
+                    '<div style="text-align: center">Items count <strong>%itemsCount% pcs</strong></div>',
+                    '<div style="text-align: center">Total price <strong>$%itemsPrice%</strong></div>'
+                ],
+                showQuantityManipulator: true
             });
-        }
+           }
         });
 		
 		
@@ -56,13 +68,13 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
   <div class="section hero">
+  <div class="cart-dropdown"></div>
     <div class="container">
       <div class="row">
         <div class="one-half column">
           <h4 class="hero-heading">Diseño Gráfico e Ilustración.</h4>
 		  <h2> Jorge Ferru </h2>
          <!-- <a class="button button-primary" href="http://getskeleton.com">Contacto</a> -->
-		  <div class="buy-button" data-url="https://cdn.apicart.dev/external/1fley4g5eeo0geipx5drwdfz4ighceg5/data/01/1.json"></div>
         </div>
         <div class="one-half column phones">
           <img class="phone" src="images/pic01.png">
@@ -76,19 +88,22 @@
     <div class="container">
       <div class="row">
         <div class="one-third column value">
-          <h2 class="value-multiplier">90%</h2>
+          <img src="#">
           <h5 class="value-heading">Lorem</h5>
           <p class="value-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua.</p>
+		  <div class="buy-button" data-url="https://cdn.apicart.dev/external/1fley4g5eeo0geipx5drwdfz4ighceg5/data/01/1.json"></div>
         </div>
         <div class="one-third column value">
-          <h2 class="value-multiplier">60%</h2>
+          <img src="#">
           <h5 class="value-heading">Ipsum</h5>
           <p class="value-description">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat.</p>
+		  <div class="buy-button" data-url="https://cdn.apicart.dev/external/1fley4g5eeo0geipx5drwdfz4ighceg5/data/01/1.json"></div>
         </div>
         <div class="one-third column value">
-          <h2 class="value-multiplier">10%</h2>
+          <img src="#">
           <h5 class="value-heading">Dolor</h5>
           <p class="value-description">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat.</p>
+		  <div class="buy-button" data-url="https://cdn.apicart.dev/external/1fley4g5eeo0geipx5drwdfz4ighceg5/data/01/1.json"></div>
         </div>
       </div>
     </div>
