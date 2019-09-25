@@ -17,31 +17,37 @@
 
 /* Hero
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.phones {
+.hero {
+  background-image: url('../images/bg1.png');
+  background-size: cover;
+  color: #fff;
+}
+
+.showcase {
   position: relative;
 }
-.phone {
+.show {
   position: relative;
   max-width: 80%;
   margin: 3rem auto -12rem;
 }
-.phone + .phone {
+.show + .show {
   display: none;
 }
 
 /* Values
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .values {
-  background-image: url('../images/bg1.png');
-  background-size: cover;
+  /* background-image: url('../images/bg1.png');
+  background-size: cover; */
   color: #fff;
 
   padding-bottom: 5rem;
 }
-.value-multiplier {
+/*.value-multiplier {
   margin-bottom: .5rem;
   color: #11DFC7;
-}
+}*/
 .value-heading {
   margin-bottom: .3rem;
 }
@@ -50,20 +56,14 @@
   font-weight: 300;
 }
 
-/* Help
+/* Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.get-help {
-  border-bottom: 1px solid #ddd;
-}
-
-/* Categories
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.categories {
-  background-image: url('../images/bg2.jpg');
+.footer {
+  background-image: url('../images/bg2.jpg'); 
   background-size: cover;
   color: #fff;
 }
-.categories .section-description { 
+.footer .section-description { 
   margin-bottom: 4rem;
 }
 
