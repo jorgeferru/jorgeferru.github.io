@@ -1,3 +1,43 @@
+/* Apicart sandbox
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.top-header {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    box-shadow: 0 0 4px -1px #666;
+    top: 0;
+    left: 0;
+    background-color: #FFFFFF;
+}
+
+.navbar {
+    max-width: 1366px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo-text {
+    font-size: 24px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.logo-text:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.cart-dropdown-items-count {
+    width: 30px;
+    display: inline-block;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 100px;
+    background-color: #dc3545;
+    color: #FFFFFF;
+}
+
 /* Shared
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .button {
