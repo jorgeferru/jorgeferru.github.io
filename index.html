@@ -39,6 +39,20 @@
     </script>
 	
 	<script src="https://cdn.apicart.dev/v1/?components=all"></script>
+	<script>
+    apicartConfigure({
+        ...
+        init: function () {
+            Utils.loops.forEach(document.querySelectorAll('.buy-button'), function (key, button) {
+                apicart.cartQuantityManipulator.render({
+                    el: button,
+                    itemUrl: button.getAttribute('data-url'),
+                    submitButton: 'Add To Cart'
+                });
+            });
+        }
+    });
+</script>
   
   
 </head>
@@ -54,7 +68,7 @@
           <h4 class="hero-heading">Diseño Gráfico e Ilustración.</h4>
 		  <h2> Jorge Ferru </h2>
          <!-- <a class="button button-primary" href="http://getskeleton.com">Contacto</a> -->
-		  <div class="buy-button" data-url="<Item data source url from administration>"></div>
+		  <div class="buy-button" data-url="https://cdn.apicart.dev/external/1fley4g5eeo0geipx5drwdfz4ighceg5/data/01/1.json"></div>
         </div>
         <div class="one-half column phones">
           <img class="phone" src="images/pic01.png">
