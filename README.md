@@ -1,4 +1,4 @@
-Personal portfolio using github pages "Minimal" theme. More below.
+Website for testing purposes using github pages "Minimal" theme. More below.
 
 ## Welcome to GitHub Pages
 
